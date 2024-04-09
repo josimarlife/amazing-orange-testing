@@ -1,4 +1,4 @@
-name: Regression Testing Adminseg
+name: Regression Orange HRM
 
 on:
   schedule:
@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - main
-      - develop
 
 jobs:
   cypress-run:
