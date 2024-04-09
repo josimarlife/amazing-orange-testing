@@ -1,0 +1,26 @@
+name: Regression Testing Adminseg
+
+on:
+  schedule:
+    - cron: "0 8 * * 1-5"
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+
+      - name: Cypress.io
+        uses: cypress-io/github-action@v6.5.0
+        with:
+          command: npm run cypress:execution-tags
+          browser: chrome
+          record: true
+
+      - name: Generate Cucumber HTML Report
+        run: node ./cucumber-html-report.js
