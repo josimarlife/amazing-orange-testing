@@ -1,0 +1,42 @@
+[
+  {
+    "description": "    Feature Description",
+    "elements": [
+      {
+        "description": "",
+        "id": "orange-hrm;login-orange-hrm",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Login Orange HRM",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the Orange HRM app",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4733000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "orange-hrm",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Orange HRM",
+    "tags": [],
+    "uri": "cypress/e2e/web/features/orange.feature"
+  }
+]

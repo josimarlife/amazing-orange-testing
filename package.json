@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:runner": "cypress open --e2e --browser chrome",
+    "e2e:chrome": "cypress run --browser chrome",
+    "cypress:execution-tags": "cypress run --browser chrome --headless --env tags=@regression"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +14,7 @@
     "@badeball/cypress-cucumber-preprocessor": "^20.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^13.7.2",
+    "multiple-cucumber-html-reporter": "^3.6.2",
     "typescript": "^5.4.4"
   }
 }
